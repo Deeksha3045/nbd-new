@@ -1,0 +1,15 @@
+{
+  "browser": true,
+  "node": true,
+  "jquery": true,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "bitwise": true,
+  "noarg": true,
+  "noempty": true,
+  "indent": 2,
+  "esversion": 6
+}

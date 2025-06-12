@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'global';
+
+.primary-btn {
+    border-radius: 42px;
+    background: $primary-color;
+    color: #FFF;
+    font-family: $body-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142%; /* 26.98px */
+    letter-spacing: -0.19px;
+    padding: 16px 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    border-radius: 42px;
+    background: $primary-color;
+    color: #FFF;
+    font-family: $body-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142%; /* 26.98px */
+    letter-spacing: -0.19px;
+    padding: 13px 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

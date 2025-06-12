@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$body-font: "Poppins", sans-serif;
+$secondary-font: "Inter", sans-serif;
+$primary-color: #000000;
+
+$h1-size-desktop: 48px; // Maximum font size for desktop
+$h1-size-mobile: 36px; // Minimum font size for smaller devices
+
+$h2-size-desktop: 36px; // Maximum font size for desktop
+$h2-size-mobile: 28px; // Minimum font size for smaller devices
+
+$h3-size-desktop: 24px; // Maximum font size for desktop
+$h3-size-mobile: 22px; // Minimum font size for smaller devices
+
+$h4-size-desktop: 20px; // Maximum font size for desktop
+$h4-size-mobile: 18px; // Minimum font size for smaller devices
+
+// $h5-size-desktop: 18px; // Maximum font size for desktop
+// $h5-size-mobile: 16px; // Minimum font size for smaller devices
+
+// $h6-size-desktop: 18px; // Maximum font size for desktop
+// $h6-size-mobile: 16px; // Minimum font size for smaller devices
+
+
+$h1-size: clamp(#{$h1-size-mobile}, 5vw, #{$h1-size-desktop});
+$h2-size: clamp(#{$h2-size-mobile}, 5vw, #{$h2-size-desktop});
+$h3-size: clamp(#{$h3-size-mobile}, 5vw, #{$h3-size-desktop});
+$h4-size: clamp(#{$h4-size-mobile}, 5vw, #{$h4-size-desktop});
+// $h5-size: clamp(#{$h5-size-mobile}, 5vw, #{$h5-size-desktop});
+// $h6-size: clamp(#{$h6-size-mobile}, 5vw, #{$h6-size-desktop});

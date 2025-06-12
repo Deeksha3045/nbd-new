@@ -1,0 +1,42 @@
+@import "variables";
+@import "global";
+
+.enquiry-section {
+    .container {
+        .content-col {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .enquiry-section {
+        .container {
+            .content-col {
+                p {
+                    br {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .enquiry-section {
+        .container {
+            .content-col {
+                h1, p {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Noseberry",
+  "description": "Noseberry styleguide with template includes",
+  "version": "0.0.1",
+  "author": "Atul Kumar",
+  "main": "Gruntfile.js",
+  "scripts": {},
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "files": [
+    "tasks/includes.js"
+  ],
+  "devDependencies": {
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-open": "^0.2.4",
+    "grunt-regex-replace": "^0.4.0",
+    "grunt-sass": "^3.1.0",
+    "jit-grunt": "^0.10.0",
+    "sass": "^1.69.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3",
+    "jquery": "^3.7.1",
+    "npm": "^8.1.3",
+    "owl.carousel": "^2.3.4"
+  }
+}

@@ -1,0 +1,29 @@
+@import "variables";
+@import "global";
+
+.work-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.work-swiper .swiper-slide {
+    opacity: 0.2;
+}
+
+.work-swiper .swiper-slide-active {
+    opacity: 1;
+}
+
+@media (max-width:767px) {
+    .work-swiper .swiper-slide {
+        padding-right: 15px;
+        padding-left: 15PX;
+    }
+
+    .work-swiper .swiper-slide h3 {
+        font-size: 16px !important;
+    }
+    .work-swiper .swiper-slide h3 br{
+        display: none;
+    }
+}
