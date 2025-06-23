@@ -51,6 +51,78 @@
     display: none;
   }
 }
+.banner-video {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 100%), #F0F2FA;
+}
+
+.expertise-section {
+  padding-bottom: 0 !important;
+  background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0) 36.71%), #F0F2FA;
+}
+.expertise-section .container .expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 2rem;
+}
+.expertise-section .container .expertise-grid .expertise-card {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.expertise-section .container .expertise-grid .expertise-card:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.expertise-section .container .expertise-grid .expertise-card:hover .corner-bg {
+  background-color: rgba(75, 34, 224, 0.2);
+  opacity: 0.54;
+}
+.expertise-section .container .expertise-grid .corner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  z-index: 0;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  pointer-events: none;
+}
+.expertise-section .container .expertise-grid .corner-overlay .corner-bg {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-bottom-right-radius: 500px;
+  transition: background-color 0.3s;
+}
+.expertise-section .container .expertise-grid .card-content {
+  position: relative;
+  z-index: 10;
+}
+.expertise-section .container .expertise-grid .card-content .icon {
+  margin-bottom: 60px;
+}
+.expertise-section .container .expertise-grid .card-content p.desc {
+  margin-top: 8px;
+  padding-bottom: 10px;
+}
+
+.partners-section {
+  background: #F0F2FA;
+}
+.partners-section .container .partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px 24px;
+  margin: 40px auto 0;
+  max-width: 896px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -217,8 +289,8 @@ p.light-grey {
 }
 
 .padding-80 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .padding-120 {
