@@ -6,6 +6,7 @@
             margin-top: 17px;
             margin-bottom: 24px;
         }
+
         .button {
             display: flex;
             justify-content: center;
@@ -24,89 +25,294 @@
     }
 }
 
-.banner-video {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%), #F0F2FA;
+.client-slider {
+    position: relative;
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+        margin-bottom: 100px;
+    }
+
+    .gradient-left {
+        background: url(../img/left-gradient.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 136px;
+        height: 100px;
+        z-index: 10000;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+    }
+
+    .gradient-right {
+        background: url(../img/right-gradient.png);
+        height: 100px;
+        min-width: 136px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 10000;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
-.expertise-section {
-    padding-bottom: 0 !important;
-    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 36.71%), #F0F2FA;
+@media (max-width:767px) {
+    .client-slider {
+        .gradient-left {
+            min-width: 68px;
+        }
 
-    .container {
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 32px;
-            margin-top: 2rem;
+        .gradient-right {
+            min-width: 68px;
+        }
+    }
+}
 
-            .expertise-card {
+.team-nbd {
+    padding-top: 0;
+
+    .pb-60 {
+        padding-bottom: 60px;
+    }
+
+    .team-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+        }
+
+        position: relative;
+
+        .team-label {
+            padding: 0.5rem 0.75rem;
+            background-color: rgba(75, 34, 224, 0.08);
+            border-radius: 0.25rem;
+            width: max-content;
+
+            .label-text {
+                color: #74689e;
+            }
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+
+        .team-navigation {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: flex-end;
+
+            .cursor-pointer {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: ease-in-out;
+    }
+}
+
+.reviews {
+    padding-top: 0;
+
+    .pb-60 {
+        padding-bottom: 60px;
+    }
+
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+        }
+
+        .review-label {
+            padding: 0.5rem 0.75rem;
+            background-color: rgba(75, 34, 224, 0.08);
+            border-radius: 0.25rem;
+            width: max-content;
+
+            .label-text {
+                color: #74689e;
+            }
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+
+        .review-navigation {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: flex-end;
+
+            .swiper-pagination {
                 position: relative;
-                background: #fff;
+                width: auto;
+                bottom: 0;
+                font-size: 1rem;
+                color: #3d3d3d;
+                font-weight: normal;
+            }
+
+            .cursor-pointer {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .reviewswiper {
+        .swiper-wrapper {
+            transition-timing-function: ease-in-out;
+        }
+
+        .swiper-slide {
+            .review-card {
+                background-color: #f0f2fa;
                 border-radius: 1rem;
-                padding: 2rem;
-                text-align: left;
-                transition: transform 0.3s, box-shadow 0.3s;
+                padding: 32px;
 
-                &:hover {
-                    // transform: scale(1.03);
-                    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+                .review-text {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
 
-                    .corner-bg {
-                        background-color: rgba(75, 34, 224, 0.2);
-                        opacity: 0.54;
+                    @media (max-width: 767px) {
+                        font-size: 16px;
                     }
                 }
-            }
 
-            .corner-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 130px;
-                height: 130px;
-                z-index: 0;
-                overflow: hidden;
-                border-top-left-radius: 1rem;
-                pointer-events: none;
-
-                .corner-bg {
-                    width: 100%;
-                    height: 100%;
-                    background: #fff;
-                    border-bottom-right-radius: 500px;
-                    transition: background-color 0.3s;
-                }
-            }
-
-            .card-content {
-                position: relative;
-                z-index: 10;
-
-                .icon {
-                    margin-bottom: 60px;
-                }
-
-                p.desc {
-                    margin-top: 8px;
-                    padding-bottom: 10px;
+                .review-author {
+                    display: flex;
+                    align-items: center;
+                    gap: 22px;
                 }
             }
         }
     }
 }
 
-.partners-section {
-    background: #F0F2FA;
+.our-work {
+    .work-swiper {
+        margin-top: 32px;
+        width: 100%;
+        height: 100%;
+    }
 
-    .container {
-        .partners-logos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 32px 24px; 
-            margin: 40px auto 0;
-            max-width: 896px;
+    .work-swiper .swiper-slide {
+        opacity: 0.2;
+        transition: opacity 0.3s ease;
+    }
+
+    .work-swiper .swiper-slide-active {
+        opacity: 1;
+    }
+
+    .video-slide {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .video-iframe {
+        width: 100%;
+        height: 80vh;
+        border-radius: 1rem;
+    }
+
+    .overlay-gradient {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        border-radius: 1rem;
+    }
+
+    .progress-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 8px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .progress-fill {
+        height: 100%;
+        width: 0;
+        background-color: #4B22E0;
+        transition: width linear;
+    }
+
+    .slide-content {
+        position: absolute;
+        bottom: 0;
+        padding: 1rem 2rem;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        gap: 1rem;
+        z-index: 20;
+    }
+
+    .prev-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 90px;
+        /* left-1 = 0.25rem (4px) */
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        border-radius: 9999px;
+        z-index: 10;
+    }
+
+    .next-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 90px;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        border-radius: 9999px;
+        z-index: 10;
+    }
+
+    @media (max-width: 767px) {
+        .swiper-slide {
+            padding: 0 15px;
+        }
+
+        .slide-content h3 {
+            font-size: 16px !important;
+        }
+
+        .slide-content h3 br {
+            display: none;
         }
     }
+
 }
