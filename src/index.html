@@ -7,24 +7,68 @@
 
 <body>
 
+    include "components/csHeader.html"
+
     <section class="home-banner padding-120">
         <div class="container">
-            <h4 class="bold text-center">A GLOBAL AGENCY</h4>
-            <h1 class="page-title text-center">
-                Transforming fast-growing <br />
-                businesses with an <span>AI-first approach</span>
+            <h1 class="page-title">
+                Leading solution development <br />
+                company driven by
             </h1>
-            <h4 class="grey text-center mt-6">
-                Helping fast growing companies to scale smarter, <br />
-                innovate faster, and lead their industries.
-            </h4>
-            <div class="button">
-                <a href="/" class="primary-btn">Let’s connect</a>
+            <div class="content-wrapper">
+                <div class="desc">
+                    <div class="swiper vertical-text-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide purple-text">innovation</div>
+                            <div class="swiper-slide purple-text">impact</div>
+                            <div class="swiper-slide purple-text">intelligent execution</div>
+                            <div class="swiper-slide purple-text">innovation</div>
+                            <div class="swiper-slide purple-text">impact</div>
+                        </div>
+                    </div>
+                    
+                    <h6 class="light-black">
+                        Empowering fast growing companies to scale smarter, <br />
+                        innovate faster, and lead their industries.
+                    </h6>
+
+                    <div class="stats">
+                        <div>
+                            <h3 class="semibold">250+</h3>
+                            <p class="small grey">Clients</p>
+                        </div>
+                        <div>
+                            <h3 class="semibold">10+</h3>
+                            <p class="small grey">Big brands</p>
+                        </div>
+                        <div>
+                            <img src="/img/countries.svg" alt="">
+                            <p class="small grey">3 regions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <a href="/" class="primary-btn">Let’s talk</a>
+                </div>
             </div>
+
         </div>
     </section>
+
     <section class="client-slider padding-120">
         <div class="container">
+            <h6 class="grey text-center">
+                We help brands
+                <span>
+                    create new revenue streams, boost operational performance, <br /> and drive sustainable growth.
+                </span>
+                Through advanced strategies and customized digital solutions, <br /> we enable them to stay
+                <span>
+                    competitive, scalable, and future-ready.
+                </span>
+            </h6>
+
             <div class="swiper client mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -85,22 +129,106 @@
                 <div class="gradient-left"></div>
                 <div class="gradient-right"></div>
             </div>
-
-            <h3 class="grey text-center">
-                We help brands
-                <span class="text-black font-medium">
-                    create new revenue streams, boost operational performance, and drive sustainable growth.
-                </span>
-                Through advanced strategies and customized digital solutions, we enable them to stay
-                <span class="text-black font-medium">
-                    competitive, scalable, and future-ready.
-                </span>
-            </h3>
         </div>
     </section>
-    <Section class="our-work">
+
+    <section class="expertise-section">
         <div class="container">
-            <h2 class="text-center">Our latest work</h2>
+            <div class="image-col">
+                <h3>We create <strong>impact</strong> through</h3>
+                <h3 class="white">AI <span>|</span> Data <span>|</span> Cloud</h3>
+            </div>
+
+            <h2 class="text-center padding-120 pb-0">Our expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <img src="/img/web-dev.svg" alt="Software Development" />
+                    <div class="content">
+                        <p class="large semi-bold">Software Development</p>
+                        <p class="grey">Engineering resilient software solutions built to last.</p>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <img src="/img/ai-automation.svg" alt="AI & Automation Integration" />
+                    <div class="content">
+                        <p class="large semi-bold">AI & ML Solutions</p>
+                        <p class="grey">Orchestrating dynamic algorithms enhancing efficiency</p>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <img src="/img/data-analytics.svg" alt="Data Engineering & Analytics" />
+                    <div class="content">
+                        <p class="large semi-bold">Data Engineering & Analytics</p>
+                        <p class="grey">Synthesizing complex datasets enabling foresight</p>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <img src="/img/workflow.svg" alt="Cloud & DevOps" />
+                    <div class="content">
+                        <p class="large semi-bold">Cloud & DevOps</p>
+                        <p class="grey">Automating enterprise processes streamlining throughput</p>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <img src="/img/app-dev.svg" alt="Design & Experience" />
+                    <div class="content">
+                        <p class="large semi-bold">Design & Experience</p>
+                        <p class="grey">Developing tailor-made apps to meet unique needs.</p>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <img src="/img/designing.svg" alt="Digital Marketing & CRM" />
+                    <div class="content">
+                        <p class="large semi-bold">Digital Marketing & CRM</p>
+                        <p class="grey">Designing intuitive interfaces reinforcing identity</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section padding-120">
+        <div class="container">
+            <h5 class="text-center">Our Expertise in Leading Platforms</h5>
+
+            <div class="partners-logos">
+                <div>
+                    <img src="/img/frontify.png" alt="Frontify" />
+                </div>
+                <div>
+                    <img src="/img/censhare.png" alt="Censhare" />
+                </div>
+                <div>
+                    <img src="/img/google-cloud.png" alt="Google Cloud" />
+                </div>
+                <div>
+                    <img src="/img/microsoft.png" alt="Microsoft" />
+                </div>
+                <div>
+                    <img src="/img/data-bricks.png" alt="Databricks" />
+                </div>
+                <div>
+                    <img src="/img/aprimo.png" alt="Aprimo" />
+                </div>
+                <div>
+                    <img src="/img/sitecore.png" alt="Sitecore" />
+                </div>
+                <div>
+                    <img src="/img/creative-cloud.png" alt="Creative Cloud" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-work">
+        <div class="container">
+            <h2 class="text-center">Featured case studies</h2>
         </div>
         <div class="swiper work-swiper">
             <div class="swiper-wrapper">
@@ -112,7 +240,6 @@
                             title="YouTube Video"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="overlay-gradient"></div>
                         <div class="progress-bar">
                             <div class="progress-fill" id="progress-0"></div>
                         </div>
@@ -131,7 +258,6 @@
                             title="YouTube Video"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="overlay-gradient"></div>
                         <div class="progress-bar">
                             <div class="progress-fill" id="progress-1"></div>
                         </div>
@@ -150,7 +276,6 @@
                             title="YouTube Video"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="overlay-gradient"></div>
                         <div class="progress-bar">
                             <div class="progress-fill" id="progress-2"></div>
                         </div>
@@ -169,7 +294,6 @@
                             title="YouTube Video"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="overlay-gradient"></div>
                         <div class="progress-bar">
                             <div class="progress-fill" id="progress-3"></div>
                         </div>
@@ -188,7 +312,6 @@
                             title="YouTube Video"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                        <div class="overlay-gradient"></div>
                         <div class="progress-bar">
                             <div class="progress-fill" id="progress-4"></div>
                         </div>
@@ -204,17 +327,17 @@
             <div class="next-btn"><img src="img/swiper-right.svg" alt=""></div>
         </div>
 
-    </Section>
-    <section class="reviews padding-120 pt-0" id="review-slider">
+    </section>
+
+    <section class="reviews padding-120 pb-0" id="review-slider">
         <div class="container pb-60">
             <div class="review-header">
-                <div>
-                    <div class="review-label">
-                        <p class="label-text">REVIEWS</p>
-                    </div>
-                    <h2 class="mt-6">What our clients says about us</h2>
+                <div class="review-label">
+                    <p class="label-text">REVIEWS</p>
                 </div>
-                <div class="review-navigation">
+                <h2>What our clients says about us</h2>
+
+                <!-- <div class="review-navigation">
                     <div class="review-swiper-prev cursor-pointer">
                         <img src="img/arrow_back.svg" alt="">
                     </div>
@@ -222,7 +345,7 @@
                     <div class="review-swiper-next cursor-pointer">
                         <img src="img/arrow_forward.svg" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -231,10 +354,10 @@
                 <div class="swiper-slide">
                     <div class="review-card">
                         <p class="bold">ELECTRIC ONE</p>
-                        <h4 class="grey review-text">
+                        <p class="large grey review-text">
                             “Since 2022, Noseberry has managed all our creative work with reliability and excellence,
                             consistently delivering high-quality design creatives & printables for all our projects.”
-                        </h4>
+                        </p>
                         <div class="review-author">
                             <img src="img/review-img.svg" alt="">
                             <div>
@@ -247,10 +370,10 @@
                 <div class="swiper-slide">
                     <div class="review-card">
                         <p class="bold">ELECTRIC ONE</p>
-                        <h4 class="grey review-text">
+                        <p class="large grey review-text">
                             “Since 2022, Noseberry has managed all our creative work with reliability and excellence,
                             consistently delivering high-quality design creatives & printables for all our projects.”
-                        </h4>
+                        </p>
                         <div class="review-author">
                             <img src="img/review-img.svg" alt="">
                             <div>
@@ -263,10 +386,10 @@
                 <div class="swiper-slide">
                     <div class="review-card">
                         <p class="bold">ELECTRIC ONE</p>
-                        <h4 class="grey review-text">
+                        <p class="large grey review-text">
                             “Since 2022, Noseberry has managed all our creative work with reliability and excellence,
                             consistently delivering high-quality design creatives & printables for all our projects.”
-                        </h4>
+                        </p>
                         <div class="review-author">
                             <img src="img/review-img.svg" alt="">
                             <div>
@@ -279,10 +402,10 @@
                 <div class="swiper-slide">
                     <div class="review-card">
                         <p class="bold">ELECTRIC ONE</p>
-                        <h4 class="grey review-text">
+                        <p class="large grey review-text">
                             “Since 2022, Noseberry has managed all our creative work with reliability and excellence,
                             consistently delivering high-quality design creatives & printables for all our projects.”
-                        </h4>
+                        </p>
                         <div class="review-author">
                             <img src="img/review-img.svg" alt="">
                             <div>
@@ -295,10 +418,10 @@
                 <div class="swiper-slide">
                     <div class="review-card">
                         <p class="bold">ELECTRIC ONE</p>
-                        <h4 class="grey review-text">
+                        <p class="large grey review-text">
                             “Since 2022, Noseberry has managed all our creative work with reliability and excellence,
                             consistently delivering high-quality design creatives & printables for all our projects.”
-                        </h4>
+                        </p>
                         <div class="review-author">
                             <img src="img/review-img.svg" alt="">
                             <div>
@@ -311,10 +434,10 @@
                 <div class="swiper-slide">
                     <div class="review-card">
                         <p class="bold">ELECTRIC ONE</p>
-                        <h4 class="grey review-text">
+                        <p class="large grey review-text">
                             “Since 2022, Noseberry has managed all our creative work with reliability and excellence,
                             consistently delivering high-quality design creatives & printables for all our projects.”
-                        </h4>
+                        </p>
                         <div class="review-author">
                             <img src="img/review-img.svg" alt="">
                             <div>
@@ -327,10 +450,10 @@
                 <div class="swiper-slide">
                     <div class="review-card">
                         <p class="bold">ELECTRIC ONE</p>
-                        <h4 class="grey review-text">
+                        <p class="large grey review-text">
                             “Since 2022, Noseberry has managed all our creative work with reliability and excellence,
                             consistently delivering high-quality design creatives & printables for all our projects.”
-                        </h4>
+                        </p>
                         <div class="review-author">
                             <img src="img/review-img.svg" alt="">
                             <div>
@@ -343,7 +466,187 @@
             </div>
         </div>
     </section>
-    <section class="team-nbd padding-120 pt-0" id="team-slider">
+
+    <section class="enquiry-section padding-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-col">
+                        <h1 class="white">Let’s level up <br /> your brand together</h1>
+                        <p class="white">We help brands create new revenue streams, boost operational performance, and
+                            drive sustainable growth. </p>
+                        <a href="" class="schedule-btn"><img src="/img/calender.svg" alt="">Schedule a call<img
+                                src="/img/rightarrow.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="form-col">
+                        <p class="large semi-bold">Share your requirement</p>
+                        <form class="form" method="POST" enctype="multipart/form-data">
+                            <div>
+                                <label>Your Full name*</label>
+                                <div class="col-md-12">
+                                    <input type="text" name="text-name" placeholder="Your full name" required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label>Number *</label>
+                                <div class="row">
+                                    <div class="col-md-5 country pe-2">
+                                        <select name="select-country" required>
+                                            <option value="+91-India">+91-India</option>
+                                            <option value="+1-United States">+1-United States</option>
+                                            <option value="+44-United Kingdom">+44-United Kingdom</option>
+                                            <option value="+61-Australia">+61-Australia</option>
+                                            <option value="+1-Canada">+1-Canada</option>
+                                            <option value="+49-Germany">+49-Germany</option>
+                                            <option value="+33-France">+33-France</option>
+                                            <option value="+81-Japan">+81-Japan</option>
+                                            <option value="+55-Brazil">+55-Brazil</option>
+                                            <option value="+86-China">+86-China</option>
+                                            <option value="+39-Italy">+39-Italy</option>
+                                            <option value="+34-Spain">+34-Spain</option>
+                                            <option value="+7-Russia">+7-Russia</option>
+                                            <option value="+82-South Korea">+82-South Korea</option>
+                                            <option value="+31-Netherlands">+31-Netherlands</option>
+                                            <option value="+64-New Zealand">+64-New Zealand</option>
+                                            <option value="+47-Norway">+47-Norway</option>
+                                            <option value="+46-Sweden">+46-Sweden</option>
+                                            <option value="+41-Switzerland">+41-Switzerland</option>
+                                            <option value="+27-South Africa">+27-South Africa</option>
+                                            <option value="+65-Singapore">+65-Singapore</option>
+                                            <option value="+971-United Arab Emirates">+971-United Arab Emirates</option>
+                                            <option value="+52-Mexico">+52-Mexico</option>
+                                            <option value="+66-Thailand">+66-Thailand</option>
+                                            <option value="+60-Malaysia">+60-Malaysia</option>
+                                            <option value="+90-Turkey">+90-Turkey</option>
+                                            <option value="+62-Indonesia">+62-Indonesia</option>
+                                            <option value="+351-Portugal">+351-Portugal</option>
+                                            <option value="+48-Poland">+48-Poland</option>
+                                            <option value="+45-Denmark">+45-Denmark</option>
+                                            <option value="+358-Finland">+358-Finland</option>
+                                            <option value="+30-Greece">+30-Greece</option>
+                                            <option value="+353-Ireland">+353-Ireland</option>
+                                            <option value="+63-Philippines">+63-Philippines</option>
+                                            <option value="+40-Romania">+40-Romania</option>
+                                            <option value="+420-Czech Republic">+420-Czech Republic</option>
+                                            <option value="+36-Hungary">+36-Hungary</option>
+                                            <option value="+354-Iceland">+354-Iceland</option>
+                                            <option value="+43-Austria">+43-Austria</option>
+                                            <option value="+32-Belgium">+32-Belgium</option>
+                                            <option value="+372-Estonia">+372-Estonia</option>
+                                            <option value="+853-Macau">+853-Macau</option>
+                                            <option value="+356-Malta">+356-Malta</option>
+                                            <option value="+264-Namibia">+264-Namibia</option>
+                                            <option value="+977-Nepal">+977-Nepal</option>
+                                            <option value="+92-Pakistan">+92-Pakistan</option>
+                                            <option value="+966-Saudi Arabia">+966-Saudi Arabia</option>
+                                            <option value="+380-Ukraine">+380-Ukraine</option>
+                                            <option value="+84-Vietnam">+84-Vietnam</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-7 contact-number">
+                                        <input type="tel" name="tel" placeholder="Contact number" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label>Your Email ID*</label>
+                                <div class="col-md-12">
+                                    <input type="email" name="email" placeholder="Email id" required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label>Attach file (optional)</label>
+                                <div class="col-md-12 file-attech-col">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-md-12">
+                                <button type="submit" class="primary-btn">Submit details</button>
+                            </div>
+
+                            <div class="col-md-12 info">
+                                <p class="small grey text-center lh-base">
+                                    By submitting this form you acknowledge that you have read Noseberry's
+                                    <a href="">Privacy Policy</a>
+                                    and agree to its terms.*
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exploreNBD padding-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left-section">
+                        <p class="tag">INSIGHTS</p>
+                        <h2>Explore <br /> about NBD</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="right-section">
+                        <div class="row article">
+                            <div class="col-lg-6 image-container">
+                                <img src="/img/nbd-meetup.png" alt="Meetup" class="w-100" />
+                            </div>
+                            <div class="col-lg-6 content">
+                                <h6 class="semibold">"Noseberry Digital Agency: Leading the Charge in Creative
+                                    Excellence Since 2022"</h6>
+                                <div class="tags">
+                                    <span class="tag-item">Growth</span>
+                                    <span class="tag-item">AI Trends</span>
+                                </div>
+                                <div class="meta">
+                                    <div>11 April 2025</div>
+                                    <span>•</span>
+                                    <div>7 min read</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row article">
+                            <div class="col-lg-6 image-container">
+                                <img src="/img/nbd-growth.png" alt="Growth" class="w-100" />
+                            </div>
+                            <div class="col-lg-6 content">
+                                <h6 class="semibold">"Noseberry Digital Agency: Leading the Charge in Creative
+                                    Excellence Since 2022"</h6>
+                                <div class="tags">
+                                    <span class="tag-item">AI</span>
+                                    <span class="tag-item">AI Integration</span>
+                                    <span class="tag-item">Web Application</span>
+                                </div>
+                                <div class="meta">
+                                    <div>11 April 2025</div>
+                                    <span>•</span>
+                                    <div>7 min read</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nbd padding-80 pb-0">
+        <div class="container">
+            <img src="/img/Nbd-svg.svg" alt="" class="w-100">
+        </div>
+    </section>
+
+    <!-- <section class="team-nbd padding-120 pt-0" id="team-slider">
         <div class="container pb-60">
             <div class="team-header">
                 <div>
@@ -385,7 +688,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     include "components/csFooter.html"
 

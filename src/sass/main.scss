@@ -1,26 +1,33 @@
 @import "variables";
 @import "buttons";
 @import "home";
-
+@import "header";
+@import "footer";
+@import "expertise";
+@import "partners";
+@import "enquiry";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--primary-font);
+  font-family: $body-font;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
   color: var(--Grey-50, #000);
-  font-family: var(--primary-font);
-  font-size: 16px;
+  font-family: $body-font;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
-  /* 16px */
   letter-spacing: -0.48px;
+
+    &.light-black {
+        color: #3D3D3D;
+    }
 }
 
 body {
@@ -51,14 +58,14 @@ h1 {
     color: $primary-color;
     font-style: normal;
     font-weight: 500;
-    line-height: 135%;
-    letter-spacing: 0.96px;
+    line-height: 135%; /* 64.8px */
+    letter-spacing: -0.96px;
     margin: 0;
 
     &.page-title {
-        font-size: 56px;
-        line-height: 130%;
-        letter-spacing: -1.12px;
+        font-size: 76px;
+        line-height: 120%;
+        letter-spacing: -2.28px;
     }
 
     &.white {
@@ -72,12 +79,9 @@ h2 {
     color: $primary-color;
     font-style: normal;
     font-weight: 500;
-    line-height: 135%;
+    line-height: 135%; /* 54px */
+    letter-spacing: -0.8px;
     margin: 0;
-
-    &.white {
-        color: #fff;
-    }
 }
 
 h3 {
@@ -93,8 +97,8 @@ h3 {
         color: #fff !important;
     }
 
-    &.grey {
-        color: #666 !important;
+    &.semibold {
+        font-weight: 500;
     }
 }
 
@@ -103,9 +107,47 @@ h4 {
     font-size: $h4-size;
     color: $primary-color;
     font-style: normal;
+    font-weight: 500;
+    line-height: 134%; /* 43.2px */
+    letter-spacing: -0.44px;
+    margin: 0;
+
+    &.white {
+        color: #fff;
+    }
+
+    &.semibold {
+        font-weight: 500;
+    }
+
+    &.bold {
+        font-weight: 600;
+    }
+}
+
+h5 {
+    font-family: $body-font;
+    font-size: $h5-size;
+    color: $primary-color;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134%; /* 43.2px */
+    letter-spacing: -0.48px;
+    margin: 0;
+
+    &.white {
+        color: #fff;
+    }
+}
+
+h6 {
+    font-family: $body-font;
+    font-size: $h6-size;
+    color: $primary-color;
+    font-style: normal;
     font-weight: 400;
-    line-height: 155%;
-    letter-spacing: -0.19px;
+    line-height: 155%; 
+    letter-spacing: -0.2px;
     margin: 0;
 
     &.white {
@@ -119,24 +161,11 @@ h4 {
     &.semibold {
         font-weight: 500;
     }
-    &.bold {
-        font-weight: 600;
+
+    &.light-black {
+        color: #3D3D3D;
     }
 }
-
-
-// h5 {
-//     color: #4D4D4D;
-//     font-family: $body-font;
-//     font-size: $h5-size;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: 27px;
-
-//     &.white {
-//         color: #fff;
-//     }
-// }
 
 .secondary-font {
     color: #FFF;
@@ -196,6 +225,10 @@ p {
     &.light-grey {
         color: #8F8F8F !important;
     }
+
+    &.light-black {
+        color: #3D3D3D;
+    }
 }
 
 .padding-80 {
@@ -239,5 +272,9 @@ p {
 @media(max-width: 767px) {
     .container {
         --bs-gutter-x: 2.5rem;
+    }
+    .padding-120 {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }

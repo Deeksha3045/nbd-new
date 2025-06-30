@@ -1,10 +1,88 @@
 .enquiry-section {
+    background: url('/img/Enquiry.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     .container {
+        .row {
+            --bs-gutter-x: 60px;
+        }
         .content-col {
             p {
-                br {
-                    display: none;
-                }
+                line-height: 155%;
+                margin-top: 24px;
+            }
+
+            .schedule-btn {
+                margin-top: 40px;
+                display: flex;
+                padding: 20px 40px;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                border-radius: 100px;
+                background: rgba(255, 255, 255, 0.20);
+                backdrop-filter: blur(18px);
+                width: max-content;
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 140%; /* 33.6px */
+            }
+        }
+        .form-col {
+            padding: 40px;
+            border-radius: 16px;
+            background: #FFF;
+        }
+        .form {
+            margin: 32px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .row {
+                --bs-gutter-x: 0;
+            }
+        }
+        label {
+            color: $primary-color;
+            font-family: $body-font;
+            font-weight: 500;
+            line-height: 152%; /* 24.32px */
+            margin-bottom: 8px;
+            width: 100%;
+        }
+        input, select {
+            width: 100%;
+            display: flex;
+            padding: 16px;
+            align-items: center;
+            gap: 8px;
+            align-self: stretch;
+            border-radius: 8px;
+            border: 0.8px solid var(--Stroke-Outline, rgba(14, 13, 15, 0.24));
+            background: #FFF;
+
+            &:focus-visible {
+                outline: 0;
+                border-radius: var(--Values-8px, 8px);
+                border: 1.5px solid #7e42ff;
+            }
+        }
+        .primary-btn {
+            width: 100%;
+            max-width: 100%;
+
+            &:hover {
+                border: none;
+            }
+        }
+        .info {
+            margin-top: 32px;
+            a {
+                color: #666;
             }
         }
     }
@@ -13,6 +91,9 @@
 @media (max-width:991px) {
     .enquiry-section {
         .container {
+            .row {
+                --bs-gutter-y: 60px;
+            }
             .content-col {
                 p {
                     br {
@@ -32,6 +113,17 @@
                     br {
                         display: none;
                     }
+                }
+            }
+            .form-col {
+                padding: 30px;
+            }
+            .form {
+                .row {
+                    --bs-gutter-y: 8px;
+                }
+                .country {
+                    padding-right: 0 !important;
                 }
             }
         }
